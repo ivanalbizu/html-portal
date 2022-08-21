@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portals</title>
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script src="src/js/script.js" defer></script>
+  </head>
+  <body>
+    <dialog class="dialog" id="dialog">
+      <p class="dialog-title">&lt;portal&gt; not supported</p>
+      <p class="dialog-subtitle">
+        Use chrome +85 and enable Portals: chrome://flags/#enable-portals
+      </p>
+    </dialog>
+    <header class="header">
+      <h1 class="main-title">
+        Transitions between pages using <code>&lt;portal&gt;</code>
+      </h1>
+    </header>
+    <main class="main">
+      <section class="portal-wrapper">
+        <div class="placeholder"><div>Loading</div></div>
+        <portal class="portal" src="portal1.html"></portal>
+      </section>
+      <section class="portal-wrapper">
+        <div class="placeholder"><div>Loading</div></div>
+        <portal class="portal" src="portal2.html"></portal>
+      </section>
+      <section class="portal-wrapper">
+        <div class="placeholder"><div>Loading</div></div>
+        <portal class="portal" src="portal3.html"></portal>
+      </section>
+      <section class="portal-wrapper">
+        <div class="placeholder"><div>Loading</div></div>
+        <portal class="portal" src="portal4.html"></portal>
+      </section>
+    </main>
+  </body>
+</html>
